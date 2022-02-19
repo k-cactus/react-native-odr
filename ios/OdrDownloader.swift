@@ -8,14 +8,16 @@ class OdrDownloader {
   private var packageName: String
   private var packageType: String
 
-  init(packageName: String, packageType: String) {
+  init(packageName: String, packageType: String, priorityUrgent: Bool = true) {
     resourceRequest = NSBundleResourceRequest(tags: Set([packageName]), bundle: Bundle.main)
+    if priorityUrgent {
+        resourceRequest?.loadingPriority = NSBundleResourceRequestLoadingPriorityUrgent
+    }
     self.packageName = packageName
     self.packageType = packageType
   }
-  
+
   public func download(onSuccess: @escaping (String?) -> Void, onFailed: @escaping (Error) -> Void) {
-    
     resourceRequest?.conditionallyBeginAccessingResources { (available) in
       if available {
         DispatchQueue.main.async {
@@ -27,7 +29,11 @@ class OdrDownloader {
       }
     }
   }
-  
+
+  public func getProgress() -> Progress? {
+    return resourceRequest?.progress;
+  }
+
   private func downloadRequest(onSuccess: @escaping (String?) -> Void, onFailed: @escaping (Error) -> Void) {
     resourceRequest?.beginAccessingResources(completionHandler: { (error) in
       guard let error = error else {

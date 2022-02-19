@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { download, OdrOptions } from 'react-native-odr';
+import Odr, { download, OdrOptions } from 'react-native-odr';
 
 export default function App() {
   const [result, setResult] = React.useState<string>();
@@ -12,8 +12,16 @@ export default function App() {
       packageName: 'TestPackageName',
       packageType: 'md', // extension
     };
+    Odr.progress((res) => {
+      console.log('progress', res);
+    });
+    Odr.finished((res) => {
+      console.log('finished', res);
+    });
     download(options)
-      .then((filePath) => setResult(filePath.toString()))
+      .then((filePath) => {
+        setResult(filePath.toString());
+      })
       .catch(setError);
   }, []);
 

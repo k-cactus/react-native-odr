@@ -17,7 +17,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* OdrExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OdrExampleTests.m */; };
 		4C39C56BAD484C67AA576FFA /* libPods-OdrExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E69C5B9553B26FBA2DF04 /* libPods-OdrExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E65DE0F727AB4273003521B4 /* TestPackageName.md in Resources */ = {isa = PBXBuildFile; fileRef = E65DE0F627AB4273003521B4 /* TestPackageName.md */; settings = {ASSET_TAGS = (TestPackageName, ); }; };
+		E6B4CEE927C15DB00028BA61 /* TestPackageName.md in Resources */ = {isa = PBXBuildFile; fileRef = E6B4CEE827C15DB00028BA61 /* TestPackageName.md */; settings = {ASSET_TAGS = (TestPackageName, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = OdrExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA3E69C5B9553B26FBA2DF04 /* libPods-OdrExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OdrExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00ACF0FDA8BF921659E2F9A /* Pods-OdrExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdrExample.release.xcconfig"; path = "Target Support Files/Pods-OdrExample/Pods-OdrExample.release.xcconfig"; sourceTree = "<group>"; };
-		E65DE0F627AB4273003521B4 /* TestPackageName.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TestPackageName.md; sourceTree = "<group>"; };
+		E6B4CEE827C15DB00028BA61 /* TestPackageName.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestPackageName.md; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -152,13 +152,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				E65DE0F627AB4273003521B4 /* TestPackageName.md */,
+				E6B4CEE827C15DB00028BA61 /* TestPackageName.md */,
 				13B07FAE1A68108700A75B9A /* OdrExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* OdrExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6B9684456A2045ADE5A6E47E /* Pods */,
+				E6A5747927B144B700ADC692 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -174,6 +175,13 @@
 				2D02E4901E0B4A5D006451C7 /* OdrExample-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E6A5747927B144B700ADC692 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				E65DE0F727AB4273003521B4 /* TestPackageName.md in Resources */,
+				E6B4CEE927C15DB00028BA61 /* TestPackageName.md in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
