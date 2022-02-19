@@ -1,6 +1,6 @@
 {
   "name": "react-native-odr",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React Native iOS ODR integration",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
